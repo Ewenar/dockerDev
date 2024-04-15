@@ -15,6 +15,9 @@ public class User {
     @Column(name = "address")
     private String address;
 
+    @Column(name = "image")
+    private String image;
+
     public long getId() {
         return id;
     }
@@ -32,5 +35,12 @@ public class User {
     }
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 }
